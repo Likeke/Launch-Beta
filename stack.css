@@ -1,0 +1,29 @@
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+#pane {
+    position:relative;
+    width:100%;
+    overflow: hidden;
+}
+
+#box {
+    position:absolute;
+    background: url(images/rocketship.png);
+    bottom:140px;
+    left:23%;
+    width:130px;
+    height:205px;
+	-webkit-transition: all 1s ease-in-out;
+}
+
+
+#section {
+	height: 700px;
+	position: relative;
+}
+
+
+
