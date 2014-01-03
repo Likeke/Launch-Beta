@@ -4,19 +4,18 @@ html, body {
 }
 
 #pane {
-    position:relative;
-    width:100%;
+    position: relative;
+    width: 100%;
     overflow: hidden;
 }
 
 #box {
-    position:absolute;
+    position: absolute;
     background: url(images/rocketship.png);
-    bottom:140px;
-    left:23%;
-    width:130px;
-    height:205px;
-	-webkit-transition: all 1s ease-in-out;
+    bottom: 140px;
+    left: 23%;
+    width: 130px;
+    height: 205px;
 }
 
 
@@ -25,5 +24,6 @@ html, body {
 	position: relative;
 }
 
-
-
+.hide {
+    display: none;
+}
