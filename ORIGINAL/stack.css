@@ -1,0 +1,24 @@
+html, body {
+        height: 100%;
+        margin: 0;
+}
+
+#pane {
+    position:relative;
+    width:100%;
+}
+
+#box {
+    position:absolute;
+    background: url(rocket.png);
+    bottom:140px;
+    left:20%;
+    width:64px;
+    height:139px;
+}
+
+#section {
+        background: #eee;
+        height: 300px;
+        margin: 20px;
+}

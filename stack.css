@@ -4,26 +4,21 @@ html, body {
 }
 
 #pane {
-    position: relative;
     width: 100%;
     overflow: hidden;
 }
 
 #box {
-    position: absolute;
+    position: fixed;
+    top: 50%;
+    left: 25%;
     background: url(images/rocketship.png);
-    bottom: 140px;
-    left: 23%;
     width: 130px;
     height: 205px;
 }
 
 
 #section {
+    width: 100%;
 	height: 700px;
-	position: relative;
-}
-
-.hide {
-    display: none;
 }
