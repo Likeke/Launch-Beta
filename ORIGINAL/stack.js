@@ -1,5 +1,3 @@
-// FROM ORIGINAL OUTERSPACE's STACK.js
-
 x = 0;  //horizontal coord
 y = document.height; //vertical coord
 window.scroll(x,y);
@@ -33,33 +31,3 @@ setInterval(function() {
     wh = pane.width() - box.width();
     wv = pane.height() - box.height();
 }, 20);
-//
-//
-
-
-// CLICK LAUNCH BUTTON -- SCROLL TO TOP CONTINUOUSLY
-$('.scrollup').click(function(){
-	$(".hide").css('display','block');
-    $("html, body").animate({ scrollTop: 0 }, 30000);
-	$(".scrollup").fadeOut();
-
-});
-
-// CHANGES IMAGE TO RIGHT AND LEFT
-$(document).keydown(function(e){
-    if (e.keyCode == 39) { 
-		$("#box").css('background', 'url(images/rocketship-right.png)');
-    }
-	else if (e.keyCode == 37) { 
- 		$("#box").css('background', 'url(images/rocketship-left.png)');
-    }
-	
-});
-$(document).keyup(function(p){
-    if (e.keyCode == 39) { 
-		$("#box").css('background', 'url(images/rocketship.png)');
-    }
-	else if (e.keyCode == 37) { 
- 		$("#box").css('background', 'url(images/rocketship.png)');
-    }
-});
