@@ -1,3 +1,4 @@
+
 // FROM ORIGINAL OUTERSPACE's STACK.js
 
 x = 0;  //horizontal coord
@@ -63,3 +64,9 @@ $(document).keyup(function(p){
  		$("#box").css('background', 'url(images/rocketship.png)');
     }
 });
+
+
+
+
+
+
