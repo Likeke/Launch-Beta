@@ -418,6 +418,7 @@
 .launchContainer {
 	width: 800px;
 	height: 300px;
+	margin: auto;
 }
 
 .header1 {
@@ -527,7 +528,7 @@
 }
 
 .footerNav ul li:first-child{
-	line-height: 36px;
+	line-height: 40px;
 	color: #228c47;
 	font-size: 24px;
 	font-weight: bold;

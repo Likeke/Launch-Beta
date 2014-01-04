@@ -10,7 +10,7 @@ html, body {
 
 #box {
     position: fixed;
-    top: 50%;
+    bottom: 25%;
     left: 25%;
     background: url(images/rocketship.png);
     width: 130px;
