@@ -53,19 +53,13 @@ $(document).keydown(function(e){
     }
 	else if (e.keyCode == 37) { 
  		$("#box").css('background', 'url(images/rocketship-left.png)');
-    }
-	
+    }	
 });
 $(document).keyup(function(p){
-    if (e.keyCode == 39) { 
+    if (p.keyCode == 39 || p.keyCode == 37) { 
 		$("#box").css('background', 'url(images/rocketship.png)');
     }
-	else if (e.keyCode == 37) { 
- 		$("#box").css('background', 'url(images/rocketship.png)');
-    }
 });
-
-
 
 
 
