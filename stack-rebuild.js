@@ -1,5 +1,6 @@
 
 // FROM ORIGINAL OUTERSPACE's STACK.js
+// MOVE ROCKET LEFT AND RIGHT with ARROW KEYS
 
 x = 0;  //horizontal coord
 y = document.height; //vertical coord
