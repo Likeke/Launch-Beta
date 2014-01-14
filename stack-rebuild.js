@@ -52,14 +52,22 @@ $('.scrollup').click(function(){
 
 $('.scrollup').click(function() { 
 
-var trans = $('#box').animate({ "bottom": "+=250px" }, 10000 );
-setTimeout(function() { // timeout ... delays these functions
-    $("html, body").animate({ scrollTop: 0 }, 20000);
-    $(".hide").css('visibility','visible');
-    $(".idea").fadeOut(800);
-}, 4000);
+    $('#box').animate({ "bottom": "+=250px" }, 10000 );
+
+    setTimeout(function() { // timeout ... delays these functions
+        $("html, body").animate({ scrollTop: 0 }, 20000);
+        $(".hide").css('visibility','visible');
+        $(".idea").fadeOut(800);
+    }, 4000);
 
 });
+
+$('#box').hover(function(){
+        $(this).trigger('startRumble');
+    }, function(){
+        $(this).trigger('stopRumble');
+});
+
 
 
 
