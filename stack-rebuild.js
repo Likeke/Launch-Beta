@@ -36,18 +36,32 @@ setInterval(function() {
     });
     wh = pane.width() - box.width();
     wv = pane.height() - box.height();
-}, 20);
+}, 10); // this number changes the speed
 //
 //
 
-
+/*
 // CLICK LAUNCH BUTTON -- SCROLL TO TOP CONTINUOUSLY
 $('.scrollup').click(function(){
-	$(".hide").css('visibility','visible');
-    $("html, body").animate({ scrollTop: 0 }, 30000);
+    $("html, body").animate({ scrollTop: 0 }, 20000); // ms to top
+    $(".hide").css('visibility','visible');
 	$(".scrollup").fadeOut();
 
 });
+*/
+
+$('.scrollup').click(function() { 
+
+var trans = $('#box').animate({ "bottom": "+=250px" }, 10000 );
+setTimeout(function() { // timeout ... delays these functions
+    $("html, body").animate({ scrollTop: 0 }, 20000);
+    $(".hide").css('visibility','visible');
+    $(".idea").fadeOut(800);
+}, 4000);
+
+});
+
+
 
 // CHANGES IMAGE TO RIGHT AND LEFT
 // This is what is causing the flickering -- need a different solution, maybe?
