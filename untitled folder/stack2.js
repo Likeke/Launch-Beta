@@ -31,3 +31,20 @@ setInterval(function() {
     wh = pane.width() - box.width();
     wv = pane.height() - box.height();
 }, 20);
+
+
+// CHANGES IMAGE TO RIGHT AND LEFT
+// This is what is causing the flickering -- need a different solution, maybe?
+$(document).keydown(function(e){
+    if (e.keyCode == 39) { 
+        $("#box").css('background', 'url(images/rocketship-right.png)');
+    }
+    else if (e.keyCode == 37) { 
+        $("#box").css('background', 'url(images/rocketship-left.png)');
+    }   
+});
+$(document).keyup(function(p){
+    if (p.keyCode == 39 || p.keyCode == 37) { 
+        $("#box").css('background', 'url(images/rocketship.png)');
+    }
+});

@@ -10,11 +10,11 @@ html, body {
 
 #box {
     position:absolute;
-    background: url(rocket.png);
+    background: url(images/rocketship.png);
     bottom:140px;
     left:20%;
-    width:64px;
-    height:139px;
+    width:130px;
+    height:205px;
 }
 
 #section {
