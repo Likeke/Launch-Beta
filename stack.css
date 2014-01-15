@@ -26,3 +26,13 @@ html, body {
 .hide {
     visibility: hidden;
 }
+
+.button-right, .button-left {
+    background: #00cc66;
+    border-radius: 2px;
+    color: #fff;
+    font-family: Quicksand, sans-serif;
+    display: inline;
+    padding: 10px 30px;
+
+}

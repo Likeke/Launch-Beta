@@ -126,6 +126,8 @@ $( ".button-left" )
     $( "#box" ).css('-webkit-transform', 'rotate(-15deg)');
   });
 
+  // http://jsfiddle.net/kuEA7/12/  Like this?  I need to learn JavaScript and jQuery so I can actually do what I want, instead of look for code snippets.  
+
 
 
 
