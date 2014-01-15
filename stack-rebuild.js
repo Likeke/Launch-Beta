@@ -62,11 +62,7 @@ $('.scrollup').click(function() {
 
 });
 
-$('#box').hover(function(){
-        $(this).trigger('startRumble');
-    }, function(){
-        $(this).trigger('stopRumble');
-});
+
 
 
 
@@ -109,4 +105,29 @@ $(document).keyup(function(p){
         $("#box").css('transform', '');
     }
 });
+
+// left and right BUTTONS rotate
+
+$( ".button-right" )
+  .mouseup(function() {
+    $( "#box" ).css('-webkit-transform', 'rotate(0deg)');
+  })
+  .mousedown(function() {
+    $( "#box" ).css('-webkit-transform', 'rotate(15deg)');
+    $( "#box" ).css('left', '+=10px');
+
+  });
+
+$( ".button-left" )
+  .mouseup(function() {
+    $( "#box" ).css('-webkit-transform', 'rotate(0deg)');
+  })
+  .mousedown(function() {
+    $( "#box" ).css('-webkit-transform', 'rotate(-15deg)');
+  });
+
+
+
+
+
 
